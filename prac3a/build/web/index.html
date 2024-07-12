@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>practical 3a</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="FileUploadServlet"
+              method = "post" enctype="multipart/form-data">
+        <h1>File Upload Application</h1>
+        Select File To Upload: <input type ="File" name ="myfile">
+        Destination: <input type ="text" name="destination">
+        <input type ="submit" name="submit" value ="Upload File">
+        </form>
+        <br><br>
+        <h1>File Download Application</h1>
+        Click <a href ="FileDownloadServlet?filename=1.pdf">TYBScIT Syllabus</a>
+        Click <a href ="FileDownloadServlet?filename=2027073.pdf">Question Paper</a>
+    </body>
+</html>
